@@ -1,0 +1,259 @@
+#General
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');;
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+ /* .banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0,0,0,0.75)),url(Climb.jpg);
+    background-size:cover;
+    background-position: center;
+
+ } */
+
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0,0,0,0.75)),url(./ImagenesDeportes/Climb.jpg);
+    background-color: black;
+    
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 120px;
+    cursor: pointer;
+    color: aliceblue;
+    font-size: 2rem;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 5px;
+    width: 0;
+    background: aquamarine ;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+
+/*Home*/
+  
+.Home{
+    display: flex;
+    align-items: center;
+    padding: 0 9%;
+    background-size: cover;
+    background-position: right;
+}
+
+  .title2 {
+    height: 14vh;
+    font-size: 4rem;
+    text-align: center;
+    color: #00a9d4;
+  }
+  
+  .color-container {
+    border-color: #00a9d4;
+    background: transparent;
+  }
+  
+  .project-img {
+    border-radius: 2rem;
+    width: 90%;
+    height: 90%;
+  }
+  
+  .project-title {
+    margin: 1rem;
+    color: aliceblue;
+  }
+  
+  .project-btn {
+    color: #d166d3;
+    border-color: transparent;
+  }
+
+  .article-container h3 {
+    color: aliceblue;
+  }
+  
+  .details-container a {
+    color: #d166d3;
+    border-radius: 2rem;
+    text-align: center;
+    font-size: 10vh;
+  }
+
+  .experience-sub-title {
+    color: #00a9d4;
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+  }
+  
+  .experience-details-container {
+    /* display:block; */
+    justify-content: center; 
+    flex-direction: column; 
+
+    /* max-width: 60rem; */
+    /* z-index: 99; */
+  }
+  
+  .article-container {
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+  }
+  
+  /* article {
+    display: flex;
+    width: 10rem;
+    justify-content: space-around;
+    gap: 0.5rem;
+  } */
+
+  .about-container {
+    gap: 2rem;
+  }
+  
+  .about-details-container {
+    justify-content: center;
+    flex-direction:column;
+    align-items: center;
+  }
+  
+  .about-container,
+  .about-details-container {
+    display: flex;
+  }
+
+ .details-container {
+    padding: 1.5rem;
+    /* flex: 2; */
+    /* background: rgb(78, 0, 166);
+    border-radius: 5rem;
+    border: #40ffdc 0.2rem solid;   */
+    text-align: center;
+  } 
+  
+  
+  .section-container {
+    gap: 4rem;
+    height: 80%;
+    color: antiquewhite;
+    text-align: center;
+    font-size: 2rem;
+  }
+  
+  .section__pic-container {
+    height: 400px;
+    width: 400px;
+    margin: auto;
+  }
+  
+  .button{
+    text-align: center;
+    color: #300084;
+    background: whitesmoke;
+    font-size: 3rem;
+    display: flex;
+    position: absolute;
+    top: 74%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    gap: 3rem;
+    border-radius: 1.5rem;
+  }
+
+  /* Alojamiento*/
+
+  #Alojamiento{
+    height: 135vh;
+  }
+  .details-container1{
+    padding: 1.5rem;
+    flex: 1;
+    /* background: rgb(78, 0, 166);
+    border-radius: 5rem;
+    border: #40ffdc 0.2rem solid;   */
+    text-align: center;
+  }
+
+  .project-img1 {
+    border-radius: 2rem;
+    width: 80%;
+    height: 80%;
+  }
+
+  /* Experiencia */
+
+  #Experiencia{
+    height: 90vh;
+  }
+
+  .section__text__p1{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: whitesmoke;
+}  
+
+.title{
+    color: #00a9d4;
+}
+ .text{
+  text-align: justify;
+  position: absolute;
+  top: 320%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  margin: 50px;
+  
+ }
+
+ .text1{
+  text-align: justify;
+  position: absolute;
+  top: 380%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  margin: 50px;
+  
+ }

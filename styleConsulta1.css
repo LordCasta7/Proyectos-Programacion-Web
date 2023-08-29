@@ -1,0 +1,24 @@
+.nav{
+   
+    margin: 50px;
+}
+
+.title{
+    text-align: center;
+}
+
+.subtitle{
+    text-align: center;
+}
+
+.cuerpo{
+    text-align: justify;
+    line-height: 2rem;
+    font-size: 1.1rem;
+}
+
+.cuerpo2{
+    text-align: justify;
+    line-height: 2rem;
+    font-size: 1.1rem;
+}

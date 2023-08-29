@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portafolio</title>
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap&quot;rel=&quot;stylesheet"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css"> -->
+    <link rel="Stylesheet" href="StylePortafolio.css" />
+    <link rel="Stylesheet" href="mediaqueries.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Portafolio</div>
+      <div>
+        <ul class="nav-links">
+          <li><a hrer="#about" onclick="location.href='#about'">About</a></li>
+          <li><a hrer="#experience" onclick="location.href='#experience'">Experience</a></li>
+          <li><a hrer="#projects" onclick="location.href='#projects'">Projects</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Portafolio</div>
+      <div class="hamburger-menu">
+        <div clas="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a hrer="#about" onclick="toggleMenu()">About Me</a></li>
+          <li><a hrer="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a hrer="#projects" onclick="toggleMenu()">Projects</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="Profile">
+      <div class="section__pic-container">
+        <img
+          src="./ImagenesPortafolio/Logo.jpeg"
+          alt="Miguel Castañeda profile picture" class="about-pic"
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hola,Yo soy</p>
+        <h1 class="title">Miguel Castañeda</h1>
+        <p class="section__text__p2">Estudiante de ingeniera informatica</p>
+
+        <div id="socials-container">
+          <a class="icon" ><i class="bx bxl-github" onclick="location.href='https://github.com/LordCasta7'"></i></a>
+          <img
+            src="./ImagenesPortafolio/logo-iue.png"
+            alt="Universidad web"
+            class="icon"
+            onclick="location.href='https://www.iue.edu.co/'"
+          />
+          <a class="icon" ><i class="bx bxl-instagram-alt" onclick="location.href='https://www.instagram.com/miguelhh2423/'"></i></a>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Conocer mas</p>
+      <h1 class="title">Acerca de mi</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./ImagenesPortafolio/Logo2.jpeg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-container">
+            <div class="details-container">
+              <img
+                src="./ImagenesPortafolio/Gorra.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Educacion</h3>
+              <p>
+                I.E.C.I, Bachillerato<br />I.E.C.I, Tecnica Recursos Humanos
+              </p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./ImagenesPortafolio/Control.png"
+                alt="Hobby icon"
+                class="icon"
+              />
+              <h3>Hobbies</h3>
+              <p>
+                Videojuegos, Deportes, Gimnasio<br />Programar, Dibujo, Diseño
+              </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Soy Miguel Angel Castañeda, tengo 19 años, estoy haciendo la carrera de ingenieria de sistemas en la universidad de envigado.
+               Soy un tipo sencillo amante de los deportes, muy activo, fan de las cosas simple y me gusta cada dia aprender mas. 
+            </p>
+          </div>
+        </div>
+      </div>
+     
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explorar mi experiencia</p>
+      <h1 class="title">Experiencia</h1>
+      <div class="experience-details-container">
+        <div class="about-container">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Otras Habilidades</h2>
+            <div class="article-container">
+              <article>
+                <a class="icon" ><i class="bx bxs-video"></i></a>
+                <div>
+                  <h3>Edicion de video</h3> 
+                </div>
+              </article>
+              <article>
+                <a class="icon" ><i class="bx bxs-game"></i></a>
+                <div>
+                  <h3>Videojuegos</h3>
+                </div>
+              </article>
+              <article>
+                <a class="icon" ><i class="bx bxs-dog"></i></a>
+                <div>
+                  <h3>Modelado 3D</h3>
+                </div>
+              </article>
+              <article>
+                <a class="icon" ><i class="bx bxs-castle"></i></a>
+                <div>
+                  <h3>Animacion</h3>
+                </div>
+              </article>
+              </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Codigo</h2>
+            <div class="article-container">
+              <article>
+                <a class="icon" ><i class="bx bxl-html5"></i></a>
+                <div>
+                  <h3>HTML</h3>
+                  <P>6 MESES</P>
+                </div>
+              </article>
+              <article>
+                <a class="icon" ><i class="bx bxl-css3"></i></a>
+                <div>
+                  <h3>CSS</h3>
+                  <P>6 MESES</P>
+              </article>
+              <article>
+                <a class="icon"><i class="bx bxs-data"></i></a>
+                <div>
+                  <h3>SQL</h3>
+                  <P>1 AÑO</P>
+              </article>
+              <article>
+                <a class="icon"><i class="bx bxl-c-plus-plus"></i></a>
+                <div>
+                  <h3>C++</h3>
+                  <P>1 AÑO</P>
+              </article>
+                <article>
+                  <a class="icon"><i class="bx bxl-visual-studio"></i></a>
+                <div>
+                  <h3>C#</h3>
+                  <P>1 AÑO</P>
+                </article>
+                <article>
+                  <a class="icon" ><i class="bx bxl-javascript"></i></a>
+                <div>
+                  <h3>Javascript</h3>
+                  <P>1 AÑO y 6 MESES</P>
+                </article>
+                <article>
+                  <a class="icon"><i class="bx bxl-mongodb"></i></a>
+                  <div>
+                    <h3>Mongo Db</h3>
+                    <P>6 MESES</P>
+                </article>
+                <article>
+                  <a class="icon"><i class="bx bxl-python"></i></a>
+                  <div>
+                    <h3>Python</h3>
+                    <P>1 AÑO</P>
+                </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+    </section>
+    <section id="projects">
+      <p class="section__text__p3s"></p>
+      <p class="section__text__p3">Explorar mis trabajos</p>
+      <h1 class="title2">Trabajos</h1>
+      <div class="experience-details-container">
+        <div class="about-container">
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img 
+          src="./ImagenesPortafolio/project-1-final.png" 
+          alt="project 1" 
+          class="project-img"
+          />
+        </div>
+        <h2 class="experience-sub-title project-title">Consultas</h2>
+        <div class="btn-container">
+        </div>
+        <button class="btn btn-color-2 project-btn" onclick="location.href='indexConsulta1.html'">
+          Consulta 1
+        </button>
+
+      </div>
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./ImagenesPortafolio/project-2-final.png" alt="Project 1" class="project-img"/>
+        </div>
+        <h2 class="experience-sub-title project-title">Diseños</h2>
+        <div class="btn-container">
+          
+        </div>
+        <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.figma.com/file/0HjGtDhvWZMkwijnaPXgLY/Portafolio?type=design&node-id=2%3A3&mode=design&t=PgTpLyVo94Na9NN8-1'">
+          Diseño Portafolio
+        </button>
+        <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.figma.com/file/WQHh5hbKtso6UBU7muJPTC/Hoja-de-vida?type=design&node-id=0%3A1&mode=design&t=LpEuBiwu5ZNQ0e9O-1'">
+          Diseño Hoja de vida
+        </button>
+        <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.figma.com/file/S9jazd0xhBjkt3ld1W3ice/Deportes-extremos?type=design&node-id=1%3A59&mode=design&t=xLEv6WBzs4hVvqBf-1'">
+          Diseño Deportes Extremos
+        </button>
+      </div>
+
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./ImagenesPortafolio/project-3-final.png" alt="Queries" class="project-img"/>
+        </div>
+        <h2 class="experience-sub-title project-title">Retos</h2>
+        <div class="btn-container">
+        </div>
+        <button class="btn btn-color-2 project-btn" onclick="location.href='indexDeportes.html'">
+          Deportes Extremos
+        </button>
+      </div>
+
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./ImagenesPortafolio/project-4-final.png" alt="Queries" class="project-img"/>
+        </div>
+        <h2 class="experience-sub-title project-title">Talleres</h2>
+        <div class="btn-container">
+        </div>
+        <button class="btn btn-color-2 project-btn" onclick="location.href='indexHoja.html'">
+          Hoja de vida
+        </button>
+      </div>
+    </div>
+    </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
