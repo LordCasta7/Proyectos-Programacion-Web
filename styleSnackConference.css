@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+body{
+    background: #031634;
+
+}
+
+#img{
+    width: 50%;
+    position: relative;
+    padding-left: 730px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.header{
+    color: aqua;
+    display: flex;
+    justify-content: start;
+    padding: 30px;
+    
+}
+
+#Profile {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    margin-left: 80px;
+  }
+  .pic-container {
+    display: flex;
+    height: 500px;
+    width: 500px;
+    margin: auto;
+  }
+  
+  .text {
+    align-self: center;
+    text-align: center;
+    color: aliceblue;
+    font-size: 1.5rem;
+    padding-bottom: 2rem; 
+  }
+
+  .text_1{
+    padding-top: 2rem;
+  }
+
+  .btn{
+    cursor: pointer;
+  }
+
+  .subTitle{
+    font-size: 2.5rem;
+    color: aquamarine;
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+    text-align: center;
+  }
+
+  .socials-container{
+    font-size: 1rem;
+  }
+
+  .text1{
+    padding: 3rem;
+    align-self: center;
+    text-align: justify;
+    color: aliceblue;
+    font-size: 1.5rem; 
+  }
+
+  .text2{
+    padding: 3rem;
+    align-self: center;
+    text-align: center;
+    color:aqua;
+    font-size: 1.5rem; 
+  }
