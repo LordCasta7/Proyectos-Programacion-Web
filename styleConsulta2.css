@@ -27,6 +27,7 @@ body{
 
 .subTitle{
     display: flex;
+    justify-content: center;
     color: #3a095d;
     padding-top: 2rem;
     font-size: 2rem;

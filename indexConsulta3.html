@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo DOM</title>
+    <link rel="Stylesheet" href="styleConsulta2.css" />
+</head>
+<body>
+    <header style="width: 100%">
+        <nav class="header">
+            <div>
+                <h1 class="title">
+                    Modelo DOM
+                </h1>
+            </div>
+        </nav>
+    </header>        
+
+    <div class="content">
+        <div class="firstSection">
+            <h2 class="subTitle">
+                ¿Que es un Modelo DOM?
+            </h2>
+                <p class="text1">
+                    El modelo de objeto de documento (DOM) es una interfaz de programación para los documentos HTML y XML. Facilita una representación estructurada del documento y define de qué manera los programas pueden acceder, al fin de modificar, tanto su estructura, estilo y contenido.
+                </p>
+        </div> 
+        <div class="secondSection">    
+            <h2 class="subTitle">
+                Estructura del modelo DOM
+            </h2>
+                <p class="text1">
+                    Dentro del mundo de la programación web, el modelo DOM especifica interfaces que pueden utilizarse para manipular documentos XML o HTML. En un futuro, se prevé que el plan para la especificación del modelo DOM será proporcionar:
+                </p>
+                <br>
+                <p class="text1">
+                    * Un modelo de estructura para el subconjunto interno y el subconjunto externo.
+                    <br>
+                    * Validación contra un esquema.
+                    <br>
+                    * Control para representar documentos por medio de hojas de estilo.
+                    <br>
+                    * Control de acceso.
+                    <br>
+                    * Seguridad de hilos de proceso o threads.
+                    <br>
+                    * Eventos.
+                    <br>
+                </p>
+
+        </div>    
+        <div class="thirdSection">
+                <p class="text1">
+                    La estructura del DOM está integrada por nodos, que se relacionan unos con otros en una estructura jerárquica, y cada nodo tiene un nodo superior del que depende, que es el nodo padre. Además, cada nodo puede tener 0, 1 o varios nodos dependientes de él, llamados nodos hijos.
+                    <br>
+                    Los nodos que están a un mismo nivel, dependiendo todos ellos del mismo nodo padre, son nodos hermanos. En esta curiosa familia de nodos, todo el árbol del DOM depende de un nodo principal a partir del cual se generan todos, el nodo Document.
+                </p>
+            <h2 class="subTitle">
+                Tipos de nodos
+            </h2>
+                <p class="text1">
+                    * Document: nodo raíz del que derivan todos los demás.
+                    <br>
+                    * Element: Cada una de las etiquetas HTML. Es el único nodo que puede contener atributos y del que pueden derivar otros nodos.
+                    <br>
+                    * Attr: Cada atributo de una etiqueta genera un nodo Attr, el cual contiene también su valor (como una propiedad). Es hijo del nodo element (etiqueta) que lo contiene.
+                    <br>
+                    * Text: Contiene el texto encerrado por una etiqueta HTML (hijo del nodo Element).
+                    <br>
+                    * Comment: Los comentarios incluidos en la pagina HTML también generan sus nodos.
+                </p>
+        </div>                                                                                                                      
+
+    </div>  
+    
+</body>
+</html>

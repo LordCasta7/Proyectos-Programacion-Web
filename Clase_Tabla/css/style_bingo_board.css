@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.bingo-board {
+    width: 90%;
+    max-width: 60rem;
+    height: 90%;
+    max-height: 80rem;
+    margin: 0 auto;
+    padding: 3rem;
+    background-color: #1A73E8;
+    border: .1rem solid #fff;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    width: 20%;
+    height: auto;
+    line-height: 5rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+th {
+    font-size: 10rem;
+    font-weight: bolder;
+    color: #eee;
+    padding-bottom: 2rem;
+}
+
+td {
+    font-size: 4rem;
+    background-color: #eee;
+    border: .1rem  solid #fff;
+    cursor: pointer;
+    transition: all ease .3s;
+}
+
+.angled-cell {
+    transform: rotate(-45deg);
+    transform-origin: center;
+}
+
+td:hover {
+    background: #E92531;
+    color: #fff;
+    transition: all ease .3s;
+}
+
+@media (max-width: 660px) {
+    html {
+        font-size: 60%;
+    }
+    
+    .bingo-board {
+        width: 95%;
+        min-height: 50rem;
+        height: auto;
+        padding: 1rem;
+    }
+
+    th {
+        font-size: 8rem;
+        padding-bottom: 1rem;
+    }
+
+    td {
+        font-size: 2.5rem;
+    }
+}

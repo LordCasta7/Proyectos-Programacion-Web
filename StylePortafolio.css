@@ -11,11 +11,12 @@
 body {
   font-family: "Poppins", sans-serif;
   /* background: linear-gradient(to right, #130035, #d166d3); */
-  background-color: #130035;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%239C92AC' fill-opacity='0.25' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"),
-    linear-gradient(to right top, #2a0051, #230044, #1a0049, #150035, #0c0023);
+  /* background-color: #130035; */
+  /* background-image: url("data:image/svg+xml,%3Csvg xmlns='./ImagenesPortafolio/Gmail.gif' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%239C92AC' fill-opacity='0.25' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"),
+    linear-gradient(to right top, #2a0051, #230044, #1a0049, #150035, #0c0023); */
+    background-image:url('./ImagenesPortafolio/Gmail.gif'); background-repeat:repeat;
 }
-
+ 
 html {
   scroll-behavior: smooth;
 }
@@ -48,6 +49,19 @@ nav {
   gap: 2rem;
   list-style: none;
   font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.aboutDesktop:hover{
+  transform: scale(1.2);
+}
+
+.projectsDesktop:hover{
+  transform: scale(1.2);
+}
+
+.experienceDesktop:hover{
+  transform: scale(1.2);
 }
 
 a {
@@ -63,13 +77,15 @@ a:hover {
 }
 
 .logo {
+  padding-top: 2rem;
   color: #40ffdc;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .logo:hover {
   cursor: default;
+  color: #00a9d4;
 }
 
 /*Hamburger Menu */
@@ -85,6 +101,7 @@ a:hover {
 
 .hamburger-icon {
   display: flex;
+  color: black;
   flex-direction: column;
   justify-content: space-between;
   height: 24px;
@@ -103,14 +120,14 @@ a:hover {
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: wheat;
+  background-color: black;
   width: fit-content;
   max-height: 0;
   overflow: hidden;
   transition: all 0.3 ease-in-out;
 }
 
-.menu-links a {
+/* .menu-links a {
   display: block;
   padding: 10px;
   text-align: center;
@@ -118,36 +135,36 @@ a:hover {
   color: wheat;
   text-decoration: none;
   transition: all 0.3 ease-in-out;
-}
+} */
 
-.menu-links li {
+/* .menu-links li {
   list-style: none;
-}
+} */
 
-.menu-links open {
+/* .menu-links open {
   max-height: 300px;
-}
+} */
 
-.hamburger-icon.open span:first-child {
+/* .hamburger-icon.open span:first-child {
   transform: rotate(45deg) translate(10px, 5px);
   background-color: whitesmoke;
-}
+} */
 
-.hamburger-icon.open span:nth-child(2) {
+/* .hamburger-icon.open span:nth-child(2) {
   opacity: 0;
-}
+} */
 
-.hamburger-icon.open span:last-child {
+/* .hamburger-icon.open span:last-child {
   transform: rotate(-45deg) translate(10px, 5px);
-}
-
+} */
+/* 
 .hamburger-icon span:first-child {
   transform: none;
-}
+} */
 
-.hamburger-icon span:first-child {
+/* .hamburger-icon span:first-child {
   transform: none;
-}
+} */
 
 /* Sections */
 
@@ -413,142 +430,3 @@ article .icon {
   color: #d166d3;
   border-color: transparent;
 }
-
-
-*
-/* .header {
-  position: fixed;
-  top: 0%;
-  left: 0%;
-  width: 100%;
-  padding: 20px 10%;
-  background: transparent;
-  display: flex;
-  justify-content: space-between;
-  align-items: 100;
-}
-
-.logo {
-  font-size: 25px;
-  color: #40ffdc;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.logo::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  background: #1c0021;
-  animation: showRight 1s ease forwards;
-  animation-delay: 0.4s;
-}
-
-.navbar a {
-  font-size: 16px;
-  color: #40ffdc;
-  text-decoration: none;
-  font-weight: 500;
-  margin-left: 35px;
-  transition: 0.3s;
-}
-
-.navbar a:hover,
-.navbar a.active {
-  color: #1c3166;
-}
-
-.home {
-  height: 100vh;
-  background: url("Imagenes/Goku.jpg") no-repeat;
-  background-position: top;
-  background-position: right;
-  display: flex;
-  align-items: center;
-  padding: 0 10%;
-}
-
-.home-content {
-  max-width: 600px;
-}
-
-.home-content h1 {
-  font-size: 56px;
-  font-weight: 700;
-}
-
-.home-content h3 {
-  font-size: 32px;
-  font-weight: 700;
-  color: whitesmoke;
-}
-
-.home-content p {
-  font-size: 16px;
-  margin: 20px 0 40px;
-}
-
-.home-content .btn-box {
-  width: 345px;
-  height: 50px;
-  background: transparent;
-}
-
-.btn-box a {
-  position: relative;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 150px;
-  height: 100;
-  background: #40ffdc;
-  border: 2px solid #40ffdc;
-  border-radius: 8px;
-  font-size: 19px;
-  color: #00a9d4;
-  text-decoration: none;
-  font-weight: 600;
-  letter-spacing: 1px;
-  z-index: 1;
-  overflow: hidden;
-  transition: 0.5s;
-}
-
-.btn-box a:nth-child(2) {
-  background: transparent;
-  color: #40ffdc;
-}
-
-.btn-box a:nth-child(2)::before {
-  background: #40ffdc;
-}
-
-.btn-box a:nth-child(2):hover {
-  color: #1c0021;
-}
-
-.btn-box a::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #1c0021;
-  z-index: -1;
-  transition: 0.5s;
-  overflow: hidden;
-}
-
-.btn-box a:hover::before {
-  width: 100%;
-}
-/* KEYFRAMES ANIMATION */
-/* @keyframes showRight {
-  100% {
-    width: 0;
-  }
-/* } */

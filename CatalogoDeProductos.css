@@ -1,93 +1,93 @@
 * {
-    margin: 0;
-    padding: 0;
-  }
-
-  body{
-    background-color: #EFD2BE;
-  }
-
-  .header{
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: #910142;
-    /* width: 100%; */
-  }
-
-  .title{
-    font-size: 1.5rem;
-    color: white;
-  }
-    .menu{
-    font-size: 2rem;
-    color: black;
-    cursor: pointer;
+  margin: 0;
+  padding: 0;
 }
-  .cart{
-    font-size: 2rem;
-    color: black;
-    cursor: pointer;
-  }
 
-  .title2{
-    display: flex;
-    justify-content: center;
-    color: whitesmoke;
-    background-color: #6C043C;
-    padding-top: 1rem;
-  }
+body{
+  background-color: #EFD2BE;
+}
 
-  .sizes{
-    cursor: pointer;
-    width: 50%;
-    display: flex;
-    justify-content: space-around;
-    color: whitesmoke;
-    background-color: #6C043C;
-    
-  }
+.header{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #910142;
+  /* width: 100%; */
+}
 
-  .Catalogue{
-    display: flex;
-    justify-content: center;
-    background-color: #6C043C;
-    font-size: 1.5rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
+.title{
+  font-size: 1.5rem;
+  color: white;
+}
+  .menu{
+  font-size: 2rem;
+  color: black;
+  cursor: pointer;
+}
+.cart{
+  font-size: 2rem;
+  color: black;
+  cursor: pointer;
+}
 
-  /* Section products */
+.title2{
+  display: flex;
+  justify-content: center;
+  color: whitesmoke;
+  background-color: #6C043C;
+  padding-top: 1rem;
+}
 
-  .products{
-    display: flex;
-    padding-top: 2rem;
-    align-items: flex-start;
-    justify-content: center;
-    width: 100%;
-    max-height: calc(100vh - 200px);
-    overflow-y: auto;
-    flex-wrap: wrap;
-    gap: 1rem;
-
-  }
-
-  .container{
-    max-width: 100%;
-    
-  }
+.sizes{
+  cursor: pointer;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  color: whitesmoke;
+  background-color: #6C043C;
   
+}
+
+.Catalogue{
+  display: flex;
+  justify-content: center;
+  background-color: #6C043C;
+  font-size: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* Section products */
+
+.products{
+  display: flex;
+  padding-top: 2rem;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  max-height: calc(100vh - 200px);
+  overflow-y: auto;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+}
+
+.container{
+  max-width: 100%;
+  
+}
+
 .information{
-    color: black;
-    font-size: 1.5rem;
+  color: black;
+  font-size: 1.5rem;
 }
 
 .add{
-    font-size: 1rem;
-    color: white;
-    background-color: black;
-    border-radius: 1rem;
-    padding: 1rem;
-    border: 3px solid #910142;
+  font-size: 1rem;
+  color: white;
+  background-color: black;
+  border-radius: 1rem;
+  padding: 1rem;
+  border: 3px solid #910142;
 
 }
